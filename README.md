@@ -1,9 +1,9 @@
-# WaveSpeedAI Jupyter Client (RunPod)
+# WaveSpeedAI Jupyter Studio (RunPod)
 
-This repository provides a **Jupyter-native** WaveSpeedAI client designed for RunPod notebooks. It uses **WaveSpeed API v3**, **httpx (sync)**, and stores the API key in a Python variable (no environment variables).
+A Jupyter-native WaveSpeedAI client that runs entirely inside a notebook using **ipywidgets** and **httpx**. The API key is requested at runtime via `getpass()` and stored only in memory.
 
 ## Usage
-Open `wavespeed_jupyter.ipynb` and run the cells in order.
+Open `wavespeed_jupyter.ipynb` and run the cells in order. The UI will let you select a model, inspect its `api_schema`, provide inputs, submit jobs asynchronously, and download outputs to `outputs/`.
 
 ## Requirements
-Install via the notebook Cell 1.
+Installed in notebook Cell 1 (`httpx`, `ipywidgets`).
